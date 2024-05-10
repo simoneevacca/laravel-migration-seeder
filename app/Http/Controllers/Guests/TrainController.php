@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Guest;
+namespace App\Http\Controllers\Guests;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -10,6 +10,8 @@ class TrainController extends Controller
 {
     public function index()
     {
-        dd(Train::all());
+        
+        $trains = Train::all();
+        return view('index', compact('trains'));
     }
 }
