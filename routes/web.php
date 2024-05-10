@@ -14,9 +14,7 @@ use App\Http\Controllers\Guests\TrainController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [TrainController::class, 'home'])->name('home');
 
 
-Route::get('train', [TrainController::class, 'index']);
+Route::get('train', [TrainController::class, 'index'])->name('today');

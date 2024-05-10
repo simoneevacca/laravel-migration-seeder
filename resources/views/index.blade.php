@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    trains
-    <div class="container">
+<div class="container">
+        <h1>Treni di oggi</h1>
         <div class="row">
             @forelse ($trains as $train)
                 <div class="col">
@@ -23,6 +23,7 @@
             @endforelse
 
         </div>
+        <a href="{{route('home')}}">torna indietro</a>
     </div>
     
  
