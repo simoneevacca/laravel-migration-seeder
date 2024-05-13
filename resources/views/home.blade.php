@@ -4,7 +4,7 @@
         <h1>Tutti i treni</h1>
         <div class="row">
             @forelse ($trains as $train)
-                <div class="col">
+                <div class="col col-3">
                     <div class="card">
                         <div>Compagnia: {{ $train->company }}</div>
                         <div>Partenza da: {{ $train->from_station }}</div>
