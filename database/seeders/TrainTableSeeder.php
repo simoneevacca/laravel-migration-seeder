@@ -44,6 +44,7 @@ class TrainTableSeeder extends Seeder
             $newTrain->from_station = $train['from_station'];
             $newTrain->to_station = $train['to_station'];
             $newTrain->departure = $train['departure'];
+            $newTrain->arrive = $train['arrive'];
             $newTrain->train_code = $train['train_code'];
             $newTrain->carriage_number = $train['carriage_number'];
             $newTrain->is_punctual = $train['is_punctual'];
